@@ -3,3 +3,5 @@
 src/simple_package_template.egg-info
 build
 dist
+nosetests.xml
+nose.prof

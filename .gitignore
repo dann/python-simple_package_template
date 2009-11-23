@@ -3,3 +3,4 @@
 simple_package_template.egg-info
 build
 dist
+nose.prof
