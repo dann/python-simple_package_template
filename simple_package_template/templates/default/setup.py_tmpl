@@ -26,9 +26,9 @@ ${long_description|nothing}""",
     install_requires=[
         # -*- install requirements: -*-
     ],
-    extras_require=[
+    extras_require={
         # -*- Extra requirements: -*-
-    ],
+    },
     tests_require=[
         "nose",
     ],
