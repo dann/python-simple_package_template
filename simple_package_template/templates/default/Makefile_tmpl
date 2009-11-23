@@ -1,20 +1,32 @@
+# ${repr(project) Makefile
+# 
+
+TESTS = \
+	${repr(project) \
+	tests
+
+TEST_OPTIONS = \
+	-v \
+	--with-doctest
+
 default: all
 
 all:
 	@echo "Nothing to do"
 
 test:
-	nosetests
+	@(nosetests $(TEST_OPTIONS) $(TESTS))
+
 
 testxml:
-	nosetests --with-xunit
+	@(nosetests $(TEST_OPTIONS) --with-xunit $(TESTS) )
 
 profile:
-	nosetests --with-profile --profile-stats-file=nose.prof
-	python -c "import hotshot.stats ; stats = hotshot.stats.load('nose.prof') ; stats.sort_stats('time', 'calls') ; stats.print_stats(20)"
+	@(nosetests --with-profile --profile-stats-file=nose.prof $(TESTS)) 
+	@(python -c "import hotshot.stats ; stats = hotshot.stats.load('nose.prof') ; stats.sort_stats('time', 'calls') ; stats.print_stats(20)")
 
 coverage:
-	nosetests --with-coverage
+	@(nosetests --with-coverage $(TESTS)) 
 
 dist:
 	python setup.py sdist --formats=bztar
