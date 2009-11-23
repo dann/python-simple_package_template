@@ -1,0 +1,11 @@
+This project currently contains one template for creating a new package. It creates a
+more complete application skeleton.
+
+All you need to do is install the package from PyPi like so:
+
+  python easy_install simple_package_template
+
+And then creating a project skeleton is as simple as:
+
+  paster create --template=simple_package example_package
+

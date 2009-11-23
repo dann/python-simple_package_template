@@ -1,0 +1,5 @@
+*.pyc
+.DS_Store
+src/simple_package_template.egg-info
+build
+dist

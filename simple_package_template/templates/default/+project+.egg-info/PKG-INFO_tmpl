@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ${repr(project)}
+Version: ${repr(version)}
+Summary: ${description|nothing}
+Home-page: ${repr(url)|empty}
+Author: ${repr(author)}
+Author-email: ${repr(author_email)|empty},
+License: ${repr(license_name)|"MIT"}
+Description: ${repr(description)}
+Platform: UNKNOWN
+

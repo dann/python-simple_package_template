@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+${repr(project)}/__init__.py
+${repr(project)}.egg-info/PKG-INFO
+${repr(project)}.egg-info/SOURCES.txt
+${repr(project)}.egg-info/dependency_links.txt
+${repr(project)}.egg-info/entry_points.txt
+${repr(project)}.egg-info/not-zip-safe
+${repr(project)}.egg-info/top_level.txt

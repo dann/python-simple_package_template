@@ -1,0 +1,4 @@
+recursive-include tests *
+include CHANGELOG
+include LICENSE
+global-exclude .DS_Store *.gitignore
