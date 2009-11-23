@@ -21,5 +21,7 @@ build:
 
 clean:
 	find . -name '*.pyc' | xargs rm -f
+	rm -f nose.prof
+	rm -f nosetests.xml
 
 .PHONY: test testxml clean dist build profile
